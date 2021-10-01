@@ -92,7 +92,7 @@ footer {
 }
 
 /* Phone */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     body {
         background-color: hsl(0, 100%, 98%);
     }
