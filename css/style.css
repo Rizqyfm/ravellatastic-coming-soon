@@ -1,0 +1,166 @@
+/* Set-up */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url('bg-pattern-desktop.svg');
+}
+
+/* Main */
+
+.logo {
+    width: auto;
+    height: 100px;
+}
+
+.image {
+    float: right;
+}
+
+.logo, .opener, .description, form {
+    padding-left: 150px;
+    padding-top: 20px;
+}
+
+.opener {
+    color: hsl(0, 36%, 70%);
+    width: 25rem;
+}
+
+.opener span {
+    color: hsl(0, 6%, 24%);
+    font-weight: 600;
+}
+
+.description {
+    color: hsl(0, 36%, 70%);
+    width: 40rem;
+}
+
+.email-input {
+    border-radius: 25px;
+    width: 22rem;
+    font-size: 15px;
+    padding-left: 20px;
+    height: 50px;
+    border: 1px solid hsl(0, 36%, 70%);
+    background-color: hsl(0, 100%, 98%);
+    /* opacity: 0.4; */
+}
+
+.email-input:focus{
+    outline: none;
+}
+
+
+.btn {
+    height: 51px;
+    width: 95px;
+    margin-left: -80px;
+    border-radius: 25px;
+    border: 1px solid hsl(0, 36%, 70%);
+    background: hsl(0, 80%, 86%);
+    background: no-repeat center;
+    background-image: url("icon-arrow.svg"); /* fallback */
+    background-image: url("icon-arrow.svg"), linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%)); /* W3C */
+    cursor: pointer;
+}
+
+.email-submit:hover{
+    background-image: url("icon-arrow.svg"), linear-gradient(hsl(0, 0%, 100%), hsl(0, 74%, 74%))
+}
+
+/* Footer */
+footer {
+    clear: both;
+    position: relative;
+    height: 30px;
+}
+.watermark {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+    color:hsl(0, 36%, 70%) ;
+}
+
+/* Phone */
+@media screen and (max-width: 375px) {
+    body {
+        background-color: hsl(0, 100%, 98%);
+    }
+
+    .logo, .opener, .description, form {
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+
+    .logo {
+        float: left;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 60px;
+        width: auto;
+        display: none;
+    }
+
+    .forbg{
+        background-image: url("hero-mobile.jpg");
+        background-repeat: no-repeat;
+        height: 50%;
+    }
+  
+
+    .image {
+        display: none;
+    }
+
+    .container-fluid {
+        margin-top: -156px;
+    }
+    
+    .opener{
+        text-align: center;
+        width: auto;
+        margin-top: 50px;
+    }
+
+    .description {
+        text-align: center;
+        width: auto;
+    }
+
+    .form {
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+
+    .email-input {
+        width: 20rem;
+    }
+
+    .btn {
+        width: 70px;
+        margin-left: -65px;
+        height: 51px;
+    }
+
+    footer {
+        position: fixed;
+        padding-bottom: 20px;
+        bottom: 0;
+        width: 100%;
+    
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
