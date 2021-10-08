@@ -92,7 +92,7 @@ footer {
 }
 
 /* Phone */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     body {
         background-color: hsl(0, 100%, 98%);
     }
@@ -162,5 +162,3 @@ footer {
     }
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }

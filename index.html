@@ -20,6 +20,7 @@
 <body>
   <div class="forbg"></div>
 
+  <main>
   <div class="container-fluid">
 
     <div>
@@ -32,35 +33,25 @@
 
     <p class="description text-wrap">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p> 
 
-      <!-- <form action="#" id="form" class="form">
-        <input id="email" class="email-column" type="email" name="email" placeholder="Email Address" required 
-        oninvalid="this.setCustomValidity('Please provide a valid email')"
-        oninput="this.setCustomValidity('')"/>
-        <button id="btn" class="email-submit btn" type="submit"></button>
-        <span id="text"></span>
-      </form> -->
-
-      <span class="input-span">
-
         <form id="form">
 
-          <div class="input-box"></div>
+          <div class="input-box">
 
             <input type="email" class="email-input" id="email" placeholder="Email Address" >
 
-            <button class="btn" id="btn" onclick="validation()"><span><ion-icon name="chevron-forward-outline"></ion-icon></span></button>
+            <button id="btn" class="btn" onclick="validation()"></button>
 
             <p id="text"></p>
             
           </div>
         </form>
-      </span>
-      
-  </div>
+    </div>   
+  </main> 
 
   <footer class="footer border-top">
-    <h5 class="watermark">Made with ❤ by RFM</h5>
+    <h2 class="watermark">Made with ❤ by RFM</h2>
   </footer>
+
 </body>
 <!-- JS link -->
 <script src="js/main.js"></script>
